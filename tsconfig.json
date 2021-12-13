@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext", //目标语言版本
+    "useDefineForClassFields": true,
+    "module": "esnext", //生成代码模块标准
+    "moduleResolution": "node", //模块解析策略
+    "strict": true, //开启所有严格类型检查
+    "jsx": "preserve",
+    "sourceMap": true, //生成目标文件的sourceMap文件
+    "resolveJsonModule": true,
+    "esModuleInterop": true, //允许export=导出，由import from 导入
+    "lib": [
+      "esnext",
+      "dom"
+    ] // 编译时引入的 ES 功能库，包括：es5 、es6、es7、dom 等。// 如果未设置，则默认为： target 为 es5 时: ["dom", "es5", "scripthost"] 
+    //target 为 es6 时: ["dom", "es6", "dom.iterable", "scripthost"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "mock/**/*.ts"
+  ] //包含的文件
+}
